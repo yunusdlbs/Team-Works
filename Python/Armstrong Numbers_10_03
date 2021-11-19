@@ -1,0 +1,12 @@
+# Assignment - 10/03 (Armstrong Numbers)
+num = input("Enter your number: ")
+sum_digit = 0
+if num.isdigit():
+    for i in num:
+        sum_digit+=int(i)**len(num)
+    if sum_digit == int(num):
+        print(num,"is an Armstrong number")
+    else:
+        print(num,"isn't an Armstrong number")
+else:
+    print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
